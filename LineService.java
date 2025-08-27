@@ -1,30 +1,7 @@
-// This program is copyright VUW.
-// You are granted permission to use it to construct your answer to a COMP103 assignment.
-// You may not distribute it in any other way without permission.
-
-/* Code for COMP103 - 2025T2, Assignment 2
- * Name: Matthew McGowan
- * Username:mcgowamatt1
- * ID:300672872
- */
-
 import ecs100.*;
 import java.awt.Color;
 import java.util.*;
 import java.io.*;
-
-/** 
- * LineService
- * A particular train service running on a subway line.
- * A line service is specified by a list of times that train leaves
- *  each station along the subway line.
- * A LineService object contains
- *  - The SubwayLine that the service runs on
- *  - a ID of the train (the name of the line concatenated with the starting time of the train)
- *  - a list of times (integers representing 24-hour time, eg 1425 for 2:45pm), one for
- *     each station on the subway line.
- * The getStart() method will return the first real time in the list of times
- */
 
 public class LineService{
     // Fields
@@ -50,7 +27,7 @@ public class LineService{
     }
 
     public List<Integer> getTimes(){
-        return Collections.unmodifiableList(times);  // unmodifiable version of the list of times.
+        return Collections.unmodifiableList(times);  
     }
 
     // Other methods.
