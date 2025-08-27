@@ -1,13 +1,3 @@
-// This program is copyright VUW.
-// You are granted permission to use it to construct your answer to a COMP103 assignment.
-// You may not distribute it in any other way without permission.
-
-/* Code for COMP103 - 2025T2, Assignment 2
- * Name:Matthew McGowan
- * Username:mcgwamatt1
- * ID:300672872
- */
-
 import ecs100.*;
 import java.awt.Color;
 import java.util.*;
