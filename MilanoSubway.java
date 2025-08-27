@@ -1,12 +1,3 @@
-// This program is copyright VUW.
-// You are granted permission to use it to construct your answer to a COMP103 assignment.
-// You may not distribute it in any other way without permission.
-
-/* Code for COMP103 - 2025T2, Assignment 2
- * Name:Matthew McGowan
- * Username: mcgowamatt1
- * ID: 300672872
- */
 
 import ecs100.*;
 import java.util.*;
@@ -18,9 +9,7 @@ import java.nio.file.*;
  * MilanoSubway
  * A program to answer queries about Milan Metro subway lines and timetables for
  *  the subway services on those subway lines.
- *
- * See the assignment page for a description of the program and what you have to do.
- */
+*/
 
 public class MilanoSubway{
     //Fields to store the collections of Stations and Lines
@@ -44,7 +33,6 @@ public class MilanoSubway{
 
     /**
      * User interface has buttons for the queries and text fields to enter stations and subway line
-     * You will need to implement the methods here, or comment out the button.
      */
     public void setupGUI(){
         UI.addButton("List all Stations",    this::listAllStations);
@@ -80,10 +68,8 @@ public class MilanoSubway{
         UI.println("Loaded Line Services");
     }
 
-    // Methods for loading data 
-    // The loadData method suggests the methods you need to write.
-
-    /*# YOUR CODE HERE */
+    // Methods for loading data
+    
     public void loadStationData(){
         try{
         Scanner sc = new Scanner(Path.of("data/stations.data"));
@@ -187,9 +173,7 @@ public class MilanoSubway{
     }
 
     // Methods for answering the queries
-    // The setupGUI method suggests the methods you need to write.
     
-    /*# YOUR CODE HERE */
     public void listAllStations(){
         UI.clearText();
         for (Station station : allStations.values()) {
@@ -344,8 +328,6 @@ public class MilanoSubway{
     }
 
 
-
-    // ======= written for you ===============
     // Methods for asking the user for station names, line names, and time.
     
     /**
